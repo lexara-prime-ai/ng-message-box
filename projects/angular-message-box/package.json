@@ -1,0 +1,27 @@
+{
+  "name": "ng-message-box",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^16.0.0",
+    "@angular/core": "^16.0.0"
+  },
+  "description": "A simple message box component that's easy to configure and use",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/projectfinalaudio/angular-message-box"
+  },
+  "author": {
+    "name": "Irfan Ghat(Project Final Media)",
+    "email": "irfanghat@gmail.com",
+    "url": "https://github.com/projectfinalaudio"
+  },
+  "keywords": [
+    "notifications",
+    "message box",
+    "user experience"
+  ],
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
