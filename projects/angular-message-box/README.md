@@ -1,24 +1,54 @@
-# AngularMessageBox
+# ng-message-box
+**ng-message-box** is a versatile and **user-friendly component** that enables seamless integration of **dynamic** and **customizable message boxes** into your **Angular** applications. 
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+## Whether you need to:
+* Display **success notifications**, **error alerts**, **warning messages**, or **informative prompts**, this component has got you covered. 
 
-## Code scaffolding
+* With a **straightforward *API*** and a **range of configuration options**, you can easily tailor the appearance and behavior of the message boxes to match your application's design and user experience. The message-box component is highly responsive, ensuring a consistent and engaging messaging system across various devices and screen sizes. Empower your users with clear, concise, and visually appealing messages using the **ng-message-box** component to **enhance overall communication** and **user interaction** in your application.
 
-Run `ng generate component component-name --project angular-message-box` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-message-box`.
-> Note: Don't forget to add `--project angular-message-box` or else it will be added to the default project in your `angular.json` file. 
+## Installation :
+    npm i ng-message-box
 
-## Build
+## Usage :
 
-Run `ng build angular-message-box` to build the project. The build artifacts will be stored in the `dist/` directory.
+## App Module
 
-## Publishing
+    import { AngularMessageBoxModule } from  'ng-message-box';
+    
+    @NgModule({
+    	declarations: [
+    		AppComponent,
+    	],
+    	imports: [
+    		BrowserModule,
+    		AppRoutingModule,
+    		AngularMessageBoxModule
+    	],
+    	providers: [
+    	],
+    	bootstrap: [AppComponent]
+    	})
+    export  class  AppModule { }
 
-After building your library with `ng build angular-message-box`, go to the dist folder `cd dist/angular-message-box` and run `npm publish`.
+## Template
+    <ng-message-box></ng-message-box>
 
-## Running unit tests
+## Component
 
-Run `ng test angular-message-box` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    import { Component, AfterViewInit } from  '@angular/core';
+    import { AngularMessageBoxService } from  'ng-message-box';
+    
+    @Component({
+    	selector: 'app-root',
+    	templateUrl: './app.component.html',
+    	styleUrls: ['./app.component.css']
+    })
+    
+    export  class  AppComponent  implements  AfterViewInit {
+    
+    constructor(private  ms:  AngularMessageBoxService) { }
+    
+    ngAfterViewInit() {
+    	setTimeout(() => { this.ms.SHOW_SUCCESS_MESSAGE("My message..."); }, 2000);
+    	}
+    }
