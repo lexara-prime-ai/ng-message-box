@@ -1,11 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'ng-message-box',
-  standalone: true,
-  imports: [CommonModule],
   template: `
      <style>
           .message-box {
