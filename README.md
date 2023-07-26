@@ -1,7 +1,7 @@
 # ng-message-box
 **ng-message-box** is a versatile and user-friendly component that enables seamless integration of dynamic and customizable message boxes into your Angular applications. 
 
-* ## Whether you need to:
+## Whether you need to:
 * display **success notifications**, **error alerts**, **warning messages**, or **informative prompts**, this component has got you covered. 
 
 * With a straightforward API and a range of configuration options, you can easily tailor the appearance and behavior of the message boxes to match your application's design and user experience. The message-box component is highly responsive, ensuring a consistent and engaging messaging system across various devices and screen sizes. Empower your users with clear, concise, and visually appealing messages using the Angular Message Box component to enhance overall communication and user interaction in your application.
