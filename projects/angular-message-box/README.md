@@ -7,13 +7,13 @@
 * With a **straightforward *API*** and a **range of configuration options**, you can easily tailor the appearance and behavior of the message boxes to match your application's design and user experience. The message-box component is highly responsive, ensuring a consistent and engaging messaging system across various devices and screen sizes. Empower your users with clear, concise, and visually appealing messages using the **ng-message-box** component to **enhance overall communication** and **user interaction** in your application.
 
 ## Installation :
-```js
+```bash
     npm i ng-message-box
 ```
 ## Usage :
 
 ## App Module
-
+```js
     import { AngularMessageBoxModule } from  'ng-message-box';
     
     @NgModule({
@@ -30,7 +30,7 @@
     	bootstrap: [AppComponent]
     	})
     export  class  AppModule { }
-
+```
 ## Template
     <ng-message-box></ng-message-box>
 
