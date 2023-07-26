@@ -32,10 +32,11 @@
     export  class  AppModule { }
 ```
 ## Template
+```html
     <ng-message-box></ng-message-box>
-
+```
 ## Component
-
+```js
     import { Component, AfterViewInit } from  '@angular/core';
     import { AngularMessageBoxService } from  'ng-message-box';
     
@@ -53,3 +54,4 @@
     	setTimeout(() => { this.ms.SHOW_SUCCESS_MESSAGE("My message..."); }, 2000);
     	}
     }
+```
